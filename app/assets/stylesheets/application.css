@@ -13,3 +13,16 @@
  *= require_tree .
  *= require_self
  */
+
+.cincuenta img{
+ 	height: 600px;
+ 	width: 49%;
+ }
+
+ .cincuenta{
+ 	display: inline;
+ 	margin-left: auto;
+ 	margin-right: auto;
+
+ }
+
