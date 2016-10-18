@@ -1,5 +1,11 @@
 <h1>I am BATMAN</h1>
 
+<p>POR BATMAN han votado: <%= @votosporbat.count %></p>
+
+<% @votosporbat.each do |u| %>
+	<p><%= u.id %> <%= u.name %> <%= u.email %></p>
+<% end -%>
+
 <script>
 	$.backstretch("<%= asset_path 'batman' %>");
 </script>

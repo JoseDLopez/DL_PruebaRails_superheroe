@@ -1,7 +1,34 @@
 
 <div class="container">
 	<div class="row">
-		<div class="col-xs-6 cincuenta"><a href="<%= pages_batman_path %>"><%= image_tag("batmanface.jpg") %></a></div>
-		<div class="col-xs-6 cincuenta"><a href="<%= pages_superman_path %>"><%= image_tag("supermanface.png") %></a></div>
+		<div class="col-xs-6 cincuenta">
+			<div class="formulario">
+				<form action="<%= pages_guardar_batman_path %>" method="POST">
+					<label for="">VOTA POR BATMAN</label>
+					<label for="nombre">Introduzca Nombre:</label>
+					<input type="text" name="nombre" placeholder="Introduzca su nombre..." id="nombre">
+					<label for="email">Introduzca email:</label>
+					<input type="email" name="email" placeholder="example@correo.com" id="email">
+					<input type="hidden" value="<%= form_authenticity_token() %>" name="authenticity_token"/>
+					<input type="submit" value="ENVIAR">
+				</form>
+			</div>
+			<a href="<%= pages_batman_path %>"><%= image_tag("batmanface.jpg") %></a>
+		</div>
+
+		<div class="col-xs-6 cincuenta">
+			<a href="<%= pages_superman_path %>"><%= image_tag("supermanface.png") %></a>
+			<div class="formulario superform">
+				<form action="<%= pages_guardar_superman_path %>" method="POST">
+					<label for="">VOTA POR SUPERMAN</label>
+					<label for="nombre">Introduzca Nombre:</label>
+					<input type="text" name="nombre" placeholder="Introduzca su nombre..." id="nombre">
+					<label for="email">Introduzca email:</label>
+					<input type="email" name="email" placeholder="example@correo.com" id="email">
+					<input type="hidden" value="<%= form_authenticity_token() %>" name="authenticity_token"/>
+					<input type="submit" value="ENVIAR">
+				</form>
+			</div>
+		</div>
 	</div>
 </div>

@@ -1,4 +1,9 @@
 <h1>This looks like a job for Superman</h1>
+
+<p>POR SUPERMAN han votado: <%= @votosporsuper.count %></p>
+<% @votosporsuper.each do |u| %>
+	<p><%= u.id %> <%= u.name %> <%= u.email %></p>
+<% end -%>
 <script>
 	$.backstretch("<%= asset_path 'superman' %>");
 </script>
