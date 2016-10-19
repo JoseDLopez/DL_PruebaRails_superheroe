@@ -6,9 +6,9 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %> -->
   <%= csrf_meta_tags %> 
 
-  <link rel="stylesheet" href="<%= asset_path 'bootstrapcss' %>">
-  <link rel="stylesheet" href="<%= asset_path 'theme_bootstrap' %>">
-  <link rel="stylesheet" href="<%= asset_path 'foto_subida' %>">
+  <%= stylesheet_link_tag    'bootstrapcss', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag    'theme_bootstrap', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag    'foto_subida', media: 'all', 'data-turbolinks-track' => true %>
 
 </head>
 <body>
