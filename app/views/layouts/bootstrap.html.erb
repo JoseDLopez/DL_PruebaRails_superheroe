@@ -8,11 +8,12 @@
 
   <link rel="stylesheet" href="<%= asset_path 'bootstrapcss' %>">
   <link rel="stylesheet" href="<%= asset_path 'theme_bootstrap' %>">
+  <link rel="stylesheet" href="<%= asset_path 'foto_subida' %>">
 
 
 </head>
 <body>
-<div class="container">
+<div class="container <%= params[:controller] %> <%= params[:action] %>">
 	<%= yield %>
 </div>
 
