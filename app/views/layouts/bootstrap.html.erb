@@ -6,14 +6,16 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %> -->
 
-  <link rel="stylesheet" href="<%= asset_path 'bootstrap' %>">
+  <link rel="stylesheet" href="<%= asset_path 'bootstrapcss' %>">
   <link rel="stylesheet" href="<%= asset_path 'theme_bootstrap' %>">
 
 
 </head>
 <body>
+<div class="container">
+	<%= yield %>
+</div>
 
-<%= yield %>
 
 <script src="<%= asset_path 'bootstrap' %>"></script>
 </body>
