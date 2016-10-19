@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>prueba de layout</title>
+ <!--  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %> -->
+
+  <link rel="stylesheet" href="<%= asset_path 'bootstrap' %>">
+  <link rel="stylesheet" href="<%= asset_path 'theme_bootstrap' %>">
+
+
+</head>
+<body>
+
+<%= yield %>
+
+<script src="<%= asset_path 'bootstrap' %>"></script>
+</body>
+</html>
